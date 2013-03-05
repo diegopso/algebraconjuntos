@@ -48,4 +48,9 @@ public class Elemento<T> implements Comparable<T> {
 		
 		return this.valor.hashCode() - o.hashCode();
 	}
+
+	@Override
+	public String toString() {
+		return valor.toString();
+	}
 }
