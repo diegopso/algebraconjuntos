@@ -2,8 +2,9 @@
  * To change this template, choose Tools | Templates
  * and open the template in the editor.
  */
-package algebradeconjuntos;
+package src;
 
+import src.Elemento;
 import java.util.ArrayList;
 import java.util.List;
 
@@ -34,6 +35,6 @@ public class AlgebraDeConjuntos {
 		Conjunto a = new Conjunto(ae);
 		Conjunto b = new Conjunto(be);
 		
-		a.diferenca(b).imprimir();
+		System.out.println(a.uniao(b).toString());
     }
 }

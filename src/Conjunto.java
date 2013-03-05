@@ -2,8 +2,9 @@
  * To change this template, choose Tools | Templates
  * and open the template in the editor.
  */
-package algebradeconjuntos;
+package src;
 
+import src.Elemento;
 import java.util.ArrayList;
 import java.util.List;
 
@@ -102,11 +103,17 @@ public class Conjunto {
 		
 		return clone;
 	}
-	
-	public void imprimir(){
+
+	@Override
+	public String toString() {
+		String str = "{ ";
+		
 		for (Elemento e : elementos) {
-			System.out.print(e.valor + ", ");
+			str += e.valor + ", ";
 		}
-		System.out.println("");
+		
+		str = str.substring(0, str.length() - 2) + " }";
+		
+		return str;
 	}
 }
