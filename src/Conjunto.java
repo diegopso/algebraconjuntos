@@ -116,4 +116,16 @@ public class Conjunto {
 		
 		return str;
 	}
+	
+	public Conjunto produtoCartesiano(Conjunto b){
+		Conjunto c = new Conjunto();
+		
+		for (Elemento e : elementos) {
+			for (Elemento e1 : b.elementos) {
+				c.elementos.add(new Elemento(new Tupla(e, e1)));
+			}
+		}
+		
+		return c;
+	}
 }
