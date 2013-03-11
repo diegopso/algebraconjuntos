@@ -27,4 +27,10 @@ Parâmetro:
 Retorno:
 `Verdadeiro se os elementos forem iguais. Falso se os elementos forem diferentes.`
 
+### compareTo(T o) ###
 
+Este método compara os elementos.
+Parâmetro:
+`T o - O 'o' é do tipo T, nome genérico definido para classe.`
+Retorno:
+`Int. Sendo 0 ou mais para `
