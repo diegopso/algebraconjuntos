@@ -91,3 +91,26 @@ Retorno:
 ### intersecao (Conjunto c) ###
 
 Este método resulta em um conjunto constituído pelos elementos que pertencem ao conjunto atual (this) e ao conjunto c.
+
+Parâmetro:
+`Conjunto c - o conjunto c é o conjunto que será feito a interseção com o conjunto atual.`
+Retorno:
+`o conjunto que irá conter os elementos do conjunto atual e do conjunto c`
+
+### diferenca (Conjunto c) ###
+
+Este método resulta de um conjunto constituido pelos elementos que pertencem ao conjunto atual (this) e não pertencem ao conjunto c.
+
+Parâmetro:
+`Conjunto c - o conjunto c é o conjunto que será comparado com o conjunto atual, removendo os elementos iguais.`
+Retorno:
+`Retorna o conjunto dos elementos que estão no conjunto atual e não estão no conjunto c.`
+
+### produtoCartesiano (Conjunto b) ###
+
+Este método resulta no conjunto de sequências de tuplas, em que o primeiro elemento de cada sequência é um elemento do conjunto atual, e o segundo do conjunto b.
+
+Parâmetro:
+`Conjunto b - é o conjunto que será relacionado ao conjunto atual.`
+Retorno:
+`retorna o produto cartesiano entre o conjunto atual e o conjunto b.`
