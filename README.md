@@ -27,4 +27,67 @@ Parâmetro:
 Retorno:
 `Verdadeiro se os elementos forem iguais. Falso se os elementos forem diferentes.`
 
+### compareTo (T o)###
 
+Este método compara os elementos.
+Parâmetro: 
+`o - este é o objeto a ser comparado.`
+Retorno:
+`um inteiro negativo, 0, ou um inteiro positivo, quando o objeto for menor do que, igual a, ou maior do que o objeto especificado.`
+
+## Conjunto ##
+
+Esta classe representa um conjunto.
+
+### List < Elemento > elementos ###
+
+A lista que armazena os elementos.
+
+### Conjunto () ###
+
+Cria uma lista de elementos vazia.
+
+### Conjunto (List<Elemento> elementos) ###
+
+Cria uma lista com os elementos passados como parâmetro.
+
+Parâmetro:
+`A lista elementos recebe um arraylist de elementos`
+
+### contem (Conjunto c) ###
+
+Este método trata a continência entre conjuntos.
+
+Parâmetro:
+`Conjunto c -é o conjunto que vai ser verificado se está contido no conjunto atual (this).`
+Retorno: 
+`False para não está contido, e True para está contido ou é igual.`
+
+### igual (Conjunto c) ###
+
+Este método trata da igualdade entre conjuntos.
+
+Parâmetro:
+`Conjunto c - é o conjunto a ser verificado se é igual ao conjunto atual.`
+Retorno: 
+`False para diferente, True para igual.`
+
+### cardinalidade ()###
+
+Este método trata da cardinalidade do conjunto, ou seja mostra a quantidade de elementos do conjunto.
+
+Retorno:
+`Int - retorna a quantidade de elementos do conjunto`
+
+### uniao (Conjunto c) ###
+
+Este método resulta em um conjunto constituído pelos elementos que pertecem ao conjunto atual (this) ou ao conjunto c.
+
+Parâmetro:
+`Conjunto c - é o conjunto que vai se unir ao conjunto atual.`
+Retorno:
+`O retorno será a união dos conjuntos.`
+
+### intersecao (Conjunto c) ###
+
+Este método resulta em um conjunto constituído pelos elementos que pertencem ao conjunto atual (this) e ao conjunto c.
