@@ -6,6 +6,7 @@ package src;
 
 import src.Elemento;
 import java.util.ArrayList;
+import java.util.Arrays;
 import java.util.HashMap;
 import java.util.List;
 import java.util.Map;
@@ -264,5 +265,21 @@ public class Conjunto {
         }
 
         return map;
+    }
+    
+    public Conjunto quickSort() throws NaoOrdenavel{
+        QuickSort ondenador = new QuickSort((Elemento[]) elementos.toArray());
+        ondenador.ordenar();
+        Conjunto c = new Conjunto();
+        c.elementos.addAll(Arrays.asList(ondenador.elementos));
+        return c;
+    }
+    
+    public Conjunto insertionSort() throws NaoOrdenavel{
+        InsertionSort ondenador = new InsertionSort((Elemento[]) elementos.toArray());
+        ondenador.ordenar();
+        Conjunto c = new Conjunto();
+        c.elementos.addAll(Arrays.asList(ondenador.elementos));
+        return c;
     }
 }
