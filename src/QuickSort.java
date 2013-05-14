@@ -31,7 +31,7 @@ public class QuickSort {
 
     private void quicksort(Integer menor, Integer maior) throws NaoOrdenavel {
         Integer i = menor, j = maior;
-        Comparable pivo = (Comparable) elementos[menor + (maior - menor) / 2].valor;
+        Elemento pivo = elementos[menor + (maior - menor) / 2];
 
         try {
             while (i <= j) {

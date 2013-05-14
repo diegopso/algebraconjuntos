@@ -23,9 +23,7 @@ public class InsertionSort {
         try {
             for (int i = 0; i < elementos.length; i++) {
                 for (int j = i; j > 0; j--) {
-                    Comparable J1 = (Comparable) elementos[j - 1];
-                    Comparable J = (Comparable) elementos[j];
-                    if (J1.compareTo(J) > 0) {
+                    if (elementos[j - 1].compareTo(elementos[j]) > 0) {
                         trocar(j - 1, j);
                     }
                 }
