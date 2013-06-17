@@ -39,7 +39,7 @@ public class QuickSort {
                     i++;
                 }
 
-                while (pivo.compareTo(elementos[i]) < 0) {
+                while (pivo.compareTo(elementos[j]) < 0) {
                     j--;
                 }
 
